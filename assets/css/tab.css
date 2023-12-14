@@ -1,0 +1,21 @@
+﻿body{background: none;}
+.tabscript{}
+.tabscript .container{max-width: none;width:100%}
+.tabscript .td{background:#12938e;position:relative;}
+.tabscript .td h2{text-align:center;color:#fff;font-family:avob;text-transform:uppercase;font-size: 20px;padding:10px 0}
+.tabscript .td a{position:absolute;right:2%;font-family:mulib;color:#000000;text-shadow: 0 1px 0 #fff;opacity:.5;font-size: 22px;top:50%;transform: translateY(-50%);}
+.form-login{padding:20px;color:#333;font-size:15px}
+.formdk{position:relative;padding-top:18px}
+.formdk span{font-size:13px;position:absolute;top:0;left:0}
+.formdk input,.formdk textarea{border:1px solid #b8b8b8;width:100%;padding:8px 10px;box-sizing:border-box;border-radius:5px;outline:0}
+.bntdk{text-align:center;margin-top:10px}
+.bntdk a{text-transform:uppercase;font-size:14px;background:#12938e;color:#fff;padding:10px 30px;display:inline-block;border-radius:5px}
+@media only screen and (max-width: 743px){
+.imgsp{width:100%}
+.ifsp{width:100%}
+}
+@media only screen and (max-width: 550px){
+.imgsp{height:250px}
+.tdsc h2{font-size:18px;padding-left:25px}
+.tdsc h2:before{height:25px;}
+}

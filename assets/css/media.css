@@ -1,0 +1,52 @@
+.photos *{margin:0;padding:0;list-style: none;}
+.lstImgContent{overflow:hidden;margin-top: 16px;}
+.lstImgContent li{float:left;width:19%;margin-top:10px;margin-right:1.25%;padding:2px;box-sizing: border-box;}
+.lstImgContent li:nth-child(5n+5){margin-right:0;}
+.lstImgContent .postImg{height:160px;overflow:hidden;position:relative;box-sizing: border-box;}
+.lstImgContent .postImg img{height:auto;width:auto;left:0;right:0;margin:auto;}
+.listHinhAnh,.listVieos{overflow: hidden;margin: 0;padding:2px;list-style: none;}
+.listHinhAnh *,.listVieos *{margin: 0;padding:0;list-style: none;color: inherit;text-decoration: none;}
+.listHinhAnh > li,.listVieos > li{float:left;width:32%;box-sizing: border-box;margin-right: 2%}
+.listHinhAnh > li:nth-child(2n+2),.listVieos li:nth-child(3n+3){margin: 0;}
+.listHinhAnh .listImg,.listVieos .postImg{height:230px}
+.listHinhAnh ul{width:100%;position: relative;height: 100%;box-sizing:border-box}
+.listHinhAnh .listImg li{top:0;width:100%;height: 100%;position:absolute;display:none}
+.listHinhAnh .listImg img{outline: 1px solid rgba(255,255,255,.5);outline-offset: -5px;height:100%;width:auto;left:0;right:0;margin:auto;}
+.listHinhAnh h4,.listVieos h4{color:#d18b2f;margin: 0;text-align: center;font-size:17px;font-weight: normal;height: 74px;margin-top: 10px;overflow:hidden}
+.listVieos li{padding:2px;box-sizing:border-box;}
+.listVieos li img{box-shadow:0 0 2px #414141;}
+.listVieos .postImg a{position: relative;display: block;height: 100%;}
+.listVieos li .postImg a:after{content:"\f144";font-family:FontAwesome;position: absolute;left:40%;top:40%;font-size:60px;color: #fff;opacity: .5;transition: transform 1s;}
+@media only screen
+  and (max-width :1279px){
+    .lstImgContent .postImg{height: 140px;}
+    .listHinhAnh .listImg{height: 140px;}
+}
+@media only screen
+  and (max-width :1023px){
+    .lstImgContent .postImg{height: 110px;}
+}
+@media only screen
+  and (max-width :767px){
+    .photos h4{font-size:16px;}    
+    .lstImgContent li{width:32%;margin-right:2%}
+    .lstImgContent li:nth-child(5n+5){margin-right:2%;}
+    .lstImgContent li:nth-child(3n+3){margin-right:0;}
+    .lstImgContent .postImg{height:100px;border-width: 3px;}
+    .listHinhAnh .listImg{height: 100px;}
+    .listVieos .postImg{height:130px}
+    .listHinhAnh h4, .listVieos h4{margin-top: 0px;font-size: 14px;height: 60px;}
+    .listVieos li .postImg a:after{font-size:30px;}
+}
+@media only screen
+  and (max-width :479px){
+    .photos h4{font-size: 14px;}
+    .lstImgContent .postImg{height:65px;}    
+    .listHinhAnh > li{width: 49%;}
+    .listHinhAnh > li:nth-child(3n+3){margin-right: 2%;}
+    .listHinhAnh > li:nth-child(2n+2){margin-right:0;}
+    .listVieos .postImg{height:100px}
+    .listVieos > li{width: 49%;}
+    .listVieos > li:nth-child(3n+3){margin-right: 2%;}
+    .listVieos > li:nth-child(2n+2){margin-right:0;}
+}

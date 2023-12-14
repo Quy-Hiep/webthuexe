@@ -1,0 +1,20 @@
+.bankpage .overHide{overflow:initial}
+.infobk{background:#e6e6e6;padding:3px;padding-bottom:20px}
+.infobk .td{font-family:rob;color:#7f7f7f;text-transform:uppercase}
+.infobk .ma{font-family:;color:#7f7f7f;margin-left:5px;margin-top:15px;font-weight:bold}
+.infobk .ma span{font-style: italic;}
+.infobk .nd{background:#fff;margin:0 6px;padding:10px}
+.infobk .nd p{;padding:8px 0}
+.infobk .nd p+p{border-top:1px solid #ececec}
+.table a{color:#0d6efd}
+.table a:hover{color:#0a58ca;text-decoration:underline}
+
+.libank{border:1px solid #ececec;padding:15px;cursor:pointer}
+.libank:hover{box-shadow:0px 2px 10px #c1c1c1}
+.imgbank img{height:30px}
+.libank h4{font-family:rob;font-size:16px;margin-top:10px}
+.libank .nd{border-top:1px solid #ececec;margin-top:20px;padding-top:20px}
+
+.note{padding:15px;border:1px solid #ececec;border-left-color:#d5bc00;font-size:15px}
+.backhome a{padding:10px 20px;border:1px solid #bababa;display:inline-block;border-radius:7px}
+.backhome a:hover{background:#0EA70B;color:#fff}

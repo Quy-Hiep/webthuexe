@@ -1,0 +1,47 @@
+
+
+.left-content{width:49%;float:left;/* padding:10px; */box-sizing:border-box;/* border-radius:5px; *//* background-color:#f4f4f4; *//* border:1px solid #d3d3d3; */}
+.right-content{width:49%;float:right;}
+.contact .infoCompany{margin:0;color:#424242;line-height:1.5;font-size:16px;}
+.infoCompany h3,.GuiYkien h4{font-size: 30px;color:#27aae1;margin:0;font-family:newb;margin-bottom:10px;text-transform: capitalize;}
+.infoCompany p{margin:0;font-size:15px;color:#3f3f3f;line-height:2;font-family:segoe ui;}
+.infoCompany p em{font-style:normal;position:relative;display:inline-block;padding-left:30px;}
+.infoCompany p em:before{content:"\f041";font-family:fontawesome;position:absolute;left:0;border:1px solid #51bf0f;width:22px;border-radius:100%;text-align:center;color:#51bf0f;line-height:1.5;top:3px;}
+.infoCompany p em:nth-of-type(2),.infoCompany p em:nth-of-type(4){width:135px;}
+.infoCompany p em:nth-of-type(2):before{content:"\f095"}
+.infoCompany p em:nth-of-type(3):before{content:"\f1ac"}
+.infoCompany p em:nth-of-type(4):before{content:"\f003"}
+.infoCompany p em:nth-of-type(5):before{content:"\f0ac"}
+
+.titgui{font-size:16px;background-color:#27aae1;color:#fff;padding:10px;border-radius:5px 5px 0 0}
+.text_xacnhan{color:#858585;}
+.GuiYkien{padding:10px;box-sizing:border-box;border-radius:0 0 5px 5px;background-color:#f4f4f4;border:1px solid #d3d3d3;border-top:0;padding-bottom: 30px;}
+.GuiYkien table{width:100%}
+.GuiYkien .textbox{overflow:hidden;}
+.GuiYkien .txt{border:1px solid #e1e1e1;padding:6px 2%;width:100%;box-sizing:border-box;font-family:arial;font-size:13px;border-radius:3px;}
+.GuiYkien .txt50{width:49%;float:left;}
+.GuiYkien .txt50+.txt50{float:right;}
+.GuiYkien th{text-align:left;font-weight:normal;color:#27aae1;font-size:14px;padding-top: 10px;font-family:cambriar;font-style:italic}
+.GuiYkien .btn{border:none;padding:8px;width:100px;color:#fff;background:#27aae1;cursor:pointer;border-radius:4px;}
+.GuiYkien .btn:hover{background:red}
+.GuiYkien .button{padding-top:10px;text-align:center;}
+.GuiYkien .btnRefresh{width: 35px;height: 35px;background: url(../Design/refresh.png);}
+.GuiYkien .capcha{padding-top:10px;}
+.GuiYkien .imgCapcha{float: left;margin-right:8px;}
+.google_map{height:550px;margin-top:20px;}
+.google_map iframe{border: none}
+
+@media only screen
+and (max-width :767px){
+.contact .infoCompany{font-size: 14px;}
+.contact .infoCompany h1{font-size:16px;}    
+.GuiYkien h4{font-size:18px;}
+.GuiYkien table{width:100%;}
+}
+@media only screen
+and (max-width :705px){
+.contact .top-contain{height:250px;}
+.contact .left-content,.contact .right-content{width:100%;float:none;}
+.contact .left-content{margin-top:30px;}
+.GuiYkien{padding-bottom:10px}
+}

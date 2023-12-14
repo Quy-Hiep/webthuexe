@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web the xe</title>
+    <meta http-equiv="content-language" content="vi" />
+    <script src="https://kit.fontawesome.com/63348fdc1a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/css/public.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/js/style.css" rel="stylesheet" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link href="assets/js/swiper.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="row header_top align-content-center m-0">
+            <div class="col-4 d-flex align-items-center"><i class="fa-solid fa-mobile-screen-button text-white"></i>
+                HOTLINE: 012345678</div>
+            <div class="col-4 d-flex align-items-center justify-content-center"><i
+                    class="fa-regular fa-envelope text-white"></i> EMAIL: email@gmail.com</div>
+            <div class="col-4 d-flex align-items-center justify-content-end"><i
+                    class="fa-solid fa-location-dot text-white"></i></i> Chọn điểm khởi hành</div>
+        </div>
+        <div class="midhead">
+            <div class="container py-2">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/imgs/Logo.png" alt="alt">
+                    </a>
+                </div>
+                <div class="searchbox">
+                    <input type="search" class="form-control" placeholder="Tìm tour du lịch, vé máy bay" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="border-0 " id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+               
+
+                <div class="dropdown langhead">
+                    <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <img class src="assets/imgs/icons/flagVN.png" alt=""></img>Vietnamese
+                    </a>
+                
+                    <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><i ></i>English <i class="fa fa-check text-success ms-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div id="ShowMenu" class="navbar navbar-light d-lg-none">
+                    <div class="navbar-toggler"><span class="navbar-toggler-icon"></span></div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav_main mt">
+            <div class="container">
+                <ul class="list-unstyled menu_main">
+                    <li class="d-lg-none lisearch"></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>Trang chủ</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>THUÊ XE</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>TOUR PHAN THIẾT</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>TOUR TRONG NƯỚC</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>BẢNG GIÁ</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>CẨM NANG DU LỊCH</span></a></li>
+                    <li class="mnlic1"><a class="mnliac1" href="/"><span>LIÊN HỆ</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner -->
+        <div id="slideshow" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/imgs/banner.png" alt="banner" />
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <!--form dat tour-->
+              <div class="dattour_home">
+                <div class="container">
+                    <div class="form_dattour" style="margin: 0 120px;"> 
+                        <div class="btn_dattour_thuexe pt-2 px-5 d-inline-block">
+                            <a class="dattour px-2 text-capitalize fw-bold">đặt tour</a> |
+                            <a class="thuexe px-2 text-capitalize fw-bold">thuê xe</a>
+                        </div>
+                        <div class="form_input_dattour">
+                            <div class="row g-2">
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <div class="input-group">
+                                        <label class="input-group-text border-0"><i class="fa-solid fa-location-dot text-dark"></i></label>
+                                        <select class="form-select" aria-label="chọn địa điểm">
+                                            <option value="0">chọn địa điểm</option>
+                                            <option value="1">vũng tàu</option>
+                                            <option value="2">đà nẵng</option>
+                                            <option value="87">huế</option>
+                                            <option value="19">hội an</option>                                
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <select class="form-select" aria-label="chọn địa điểm">
+                                        <option value="0">chọn địa điểm</option>
+                                        <option value="1">vũng tàu</option>
+                                        <option value="2">đà nẵng</option>
+                                        <option value="87">huế</option>
+                                        <option value="19">hội an</option>                                
+                                    </select>
+    
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <select class="form-select" aria-label="chọn địa điểm">
+                                        <option value="0">chọn địa điểm</option>
+                                        <option value="1">vũng tàu</option>
+                                        <option value="2">đà nẵng</option>
+                                        <option value="87">huế</option>
+                                        <option value="19">hội an</option>                                
+                                    </select>
+    
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <select class="form-select" aria-label="chọn địa điểm">
+                                        <option value="0">chọn địa điểm</option>
+                                        <option value="1">vũng tàu</option>
+                                        <option value="2">đà nẵng</option>
+                                        <option value="87">huế</option>
+                                        <option value="19">hội an</option>                                
+                                    </select>
+    
+                                </div>
+                            </div>
+                            <div class="link"><button class="btn text-uppercase fw-bold">đặt tour</button> </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--form dat tour end--> 
+        </div>
+    <script src="/assets/js/swiper.js"></script>
+    <script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            speed: 1000,
+            loop: true,
+            autoplay: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    });
+    </script>
+    <!-- Banner end -->
+    
+    
+    
+    <!-- cam kết -->
+    <section class="ckhome overflow-hidden py-3 py-md-4">
+        <div class="container">
+            <div class="scroll">
+                <div class="rowck row g-0">
+                    <div class="col-3">
+                        <div class="item">
+                            <div class="imgz">
+                                <img src="assets/imgs/car.png" alt="alt" />
+                            </div>
+                            <div class="nd">
+                                <h4 class="h5 text-uppercase">tiết kiệm thời gian</h4>
+                                <small>bạn sẽ không mất quá nhiều thời gian để tìm kiếm xe du lịch trọn gói</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item">
+                            <div class="imgz">
+                                <img src="assets/imgs/money.png" alt="alt" />
+                            </div>
+                            <div class="nd">
+                                <h4 class="h5">chi phí hợp lý</h4>
+                                <small>bạn sẽ không mất quá nhiều thời gian để tìm kiếm xe du lịch trọn gói</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item">
+                            <div class="imgz">
+                                <img src="assets/imgs/document.png" alt="" />
+                            </div>
+                            <div class="nd">
+                                <h4 class="h5">thủ tục đơn giản</h4>
+                                <small>bạn sẽ không mất quá nhiều thời gian để tìm kiếm xe du lịch trọn gói</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="item">
+                            <div class="imgz">
+                                <img src="assets/imgs/support.png" alt="" />
+                            </div>
+                            <div class="nd">
+                                <h4 class="h5">hỗ trợ 24/7</h4>
+                                <small>bạn sẽ không mất quá nhiều thời gian để tìm kiếm xe du lịch trọn gói</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cam kết end -->
+
+    <!-- sản phẩm -->
+    <section class="sphome my-4 my-md-5 overflow-hidden">
+        <div class="container">
+            <hgroup class="title">
+                <h2 class="text-uppercase">tuor trong nước</h2>
+                <span>được nhiều khách hàng lựa chọn cho những chuyến đi của mình</span>
+
+            </hgroup>
+            <div class="row rowsp g-3 g-md-4">
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-1.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-2.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-3.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-4.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-5.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-6.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-7.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeIn col-6 col-md-4 col-lg-3">
+                    <div class="item lisp">
+                        <div class="imgH imgz">
+                            <a href="#">
+                                <img src="assets/imgs/product-8.png" alt="alt" />
+                            </a>
+                        </div>
+                        <div class="nd p-3">
+                            <h6>
+                                <a href="#">
+                                    tour du lịch vũng tàu
+                                </a>
+                            </h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sản phẩm end -->
+    <!-- giới thiệu -->
+    <section class="abouthome my-4 my-md-5 my-lg-6 overflow-hidden">
+        <div class="container">
+            <div class="row rowgt g-4 g-md-5 m-0">
+                <div class="col-12 col-md-6 m-0">
+                    <div class="nd ndgt p-4">
+                        <div class="title mb-3 d-flex align-items-center">
+                            <div class="img-gt">
+                                <img class="imgz" src="assets/imgs/logo-2.png" alt="">
+                            </div>
+                            <div>
+                                <span>công ty <span>tnhh</span></span>
+                                <h2 class="text-uppercase m-0 p-0">phan minh  <span>travel</span> </h2>
+                            </div>
+                        </div>
+                            <p>
+                                Du lịch Phan Thiết. Không chỉ sở hữu những khung cảnh thiên nhiên xinh đẹp Lầu Ông Hoàng, tháp Chàm, Hòn Rơm, đỉnh Đồi Hồng, vùng đất này còn là một điểm đến văn hóa hấp dẫn với cộng đồng dân cư đa dạng người Hoa, người Chăm. Cùng với những món ăn đặc sắc và hải sản tươi ngon.
+                                <br>Mũi Né là trung tâm du lịch của thành phố phan thiết, nổi tiếng với những đồi cát rộng mênh mang, bãi biển tuyệt đẹp và những hàng dừa cao vút bao quanh bao biển quanh năm tràn ngập ánh nắng.
+                                <br>Du Lịch Mũi Né là một trong những điểm du lịch sinh thái biển đẹp và thơ mộng nhất của tỉnh Bình Thuận. Du khách đến Mũi Né không chỉ bị hấp dẫn bởi vẻ đẹp hoang sơ của tự nhiên mà còn bị thu hút bởi nét ẩm thực độc đáo cùng sự mến khách của người dân làng chài tốt bụng.
+                            </p>
+                    </div>
+                    <button class="btn btngt mx-4" href="#">xem chi tiết</button>
+                </div>
+                <div class="col-12 col-md-6 p-4 m-0">
+                    <div class="img-gt">
+                        <img class="imgz w-100" src="assets/imgs/about.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var owlgt = $(".owlgt");
+                owlgt.owlCarousel({
+                    autoplay: true,
+                    loop: true,
+                    dots: true,
+                    //nav: true,
+                    autoplayHoverPause: true,
+                    smartSpeed: 1000,
+                    items: 1
+                });
+            });
+        </script>
+    </section>
+    <!-- giới thiệu end -->
+    <!-- sản phẩm 2 (tour du lich phan thiet)-->
+    <div>
+    </div>
+    <!-- sản phẩm 2 (tour du lich phan thiet) end-->
+    <!-- sản phẩm 3 (danh muc thue xe)-->
+    <section class="sphome_danhmucthuexe">
+        <div class="container">
+            <hgroup class="title">
+                <h2 class="mt-3 text-uppercase">danh mục thuê xe</h2>
+                <span>được nhiều khách hàng lựa chọn cho những chuyến đi của mình</span>
+            </hgroup>
+            <div class="row row_danhmucthuexe g-3 g-md-4">
+                <div class="col col-6 col-md-4 col-lg-3">
+                    <div class="card" style="border-radius: 20px;">
+                        <img src="/assets/imgs/danh-muc-thue-xe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-uppercase center">thuê xe hợp đồng</h5>
+                          <p class="card-text center">Xin gởi đến quý khách hàng, quý đối tác dịch vụ thuê xe hợp đồng du lịch tại Phan Thiết, giá rẻ, uy tín, chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-4 col-lg-3">
+                    <div class="card" style="border-radius: 20px;">
+                        <img src="/assets/imgs/danh-muc-thue-xe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-uppercase center">thuê xe dài hạn</h5>
+                          <p class="card-text center">Xin gởi đến quý khách hàng, quý đối tác dịch vụ thuê xe hợp đồng du lịch tại Phan Thiết, giá rẻ, uy tín, chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-4 col-lg-3">
+                    <div class="card" style="border-radius: 20px;">
+                        <img src="/assets/imgs/danh-muc-thue-xe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-uppercase center">thuê xe ngắn hạn</h5>
+                          <p class="card-text center">Xin gởi đến quý khách hàng, quý đối tác dịch vụ thuê xe hợp đồng du lịch tại Phan Thiết, giá rẻ, uy tín, chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 col-md-4 col-lg-3">
+                    <div class="card" style="border-radius: 20px;">
+                        <img src="/assets/imgs/danh-muc-thue-xe-4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-uppercase center">thuê xe sân bay</h5>
+                          <p class="card-text center">Xin gởi đến quý khách hàng, quý đối tác dịch vụ thuê xe hợp đồng du lịch tại Phan Thiết, giá rẻ, uy tín, chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- sản phẩm 3 (danh muc thue xe) end-->
+    <!--Tin tức-->
+    <section class="newshome overflow-hidden py-4 py-md-5">
+        <div class="container">
+            <div class="titsp">
+                <h2 class="text-uppercase">cẩm nang du lịch</h2>
+            </div>
+            <div class="row g-md-5">
+                <div class="col-12 col-md-6 pb-5">
+                    <div class="item litt">
+                        <div class="imgz">
+                            <a href="#">
+                                <img src="assets/imgs/tintuc.png" alt="alt"/>
+                            </a>
+                        </div>
+                        <div class="nd">
+                            <small class="date">Ngày đăng: 10/12/2023</small>
+                            <h3 class="td line2">
+                                <a href="">Đi du lịch Thái Lan cần giấy tờ gì? Top 7 giấy tờ cần thiết nhất</a>
+                            </h3>
+                            <small class="small line5 mt">Thái Lan - đất nước láng giềng của Việt Nam luôn là một trong những điểm đến lý tưởng của du khách ở bất kỳ thời điểm nào trong năm. Từ Bangkok với những ngôi chùa nổi tiếng đến Chiang Mai xinh đẹp hay Phuket như thiên đường đều hấp dẫn du khách. Vậy đi du lịch Thái Lan cần những giấy tờ gì cho chuyến đi hoàn hảo. Cùng Vietnam Booking tìm hiểu thông qua bài viết sau nhé.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="row item litt">
+                                <div class="col-4 imgz imgH">
+                                    <a href="#">
+                                        <img src="assets/imgs/tintuc.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-8">
+                                    <small class="date">Ngày đăng: 10/12/2023</small>
+                                    <h3 class="td line2">
+                                        <a href="">Đi du lịch Thái Lan cần giấy tờ gì? Top 7 giấy tờ cần thiết nhất</a>
+                                    </h3>
+                                    <small class="small line3 mt">Thái Lan - đất nước láng giềng của Việt Nam luôn là một trong những điểm đến lý tưởng của du khách ở bất kỳ thời điểm nào trong năm. Từ Bangkok với những...</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row item litt">
+                                <div class="col-4 imgz imgH">
+                                    <a href="#">
+                                        <img src="assets/imgs/tintuc.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-8">
+                                    <small class="date">Ngày đăng: 10/12/2023</small>
+                                    <h3 class="td line2">
+                                        <a href="">Đi du lịch Thái Lan cần giấy tờ gì? Top 7 giấy tờ cần thiết nhất</a>
+                                    </h3>
+                                    <small class="small line3 mt">Thái Lan - đất nước láng giềng của Việt Nam luôn là một trong những điểm đến lý tưởng của du khách ở bất kỳ thời điểm nào trong năm. Từ Bangkok với những...</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row item litt">
+                                <div class="col-4 imgz imgH">
+                                    <a href="#">
+                                        <img src="assets/imgs/tintuc.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-8">
+                                    <small class="date">Ngày đăng: 10/12/2023</small>
+                                    <h3 class="td line2">
+                                        <a href="">Đi du lịch Thái Lan cần giấy tờ gì? Top 7 giấy tờ cần thiết nhất</a>
+                                    </h3>
+                                    <small class="small line3 mt">Thái Lan - đất nước láng giềng của Việt Nam luôn là một trong những điểm đến lý tưởng của du khách ở bất kỳ thời điểm nào trong năm. Từ Bangkok với những...</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row item litt">
+                                <div class="col-4 imgz imgH">
+                                    <a href="#">
+                                        <img src="assets/imgs/tintuc.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-8">
+                                    <small class="date">Ngày đăng: 10/12/2023</small>
+                                    <h3 class="td line2">
+                                        <a href="">Đi du lịch Thái Lan cần giấy tờ gì? Top 7 giấy tờ cần thiết nhất</a>
+                                    </h3>
+                                    <small class="small line3 mt">Thái Lan - đất nước láng giềng của Việt Nam luôn là một trong những điểm đến lý tưởng của du khách ở bất kỳ thời điểm nào trong năm. Từ Bangkok với những...</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Tin tức end-->
+
+    <!-- Footer -->
+    <footer class="overflow-hidden wow fadeIn">
+        <div class="topfoot">
+            <div class="container py-4 py-md-5">
+                <div class="row g-4 pt-3 justify-content-between">
+                    <div class="col-12 col-lg-8">
+                        <div class="row g-4 justify-content-between">
+                            <div class="col-12 col-lg-5">
+                                <div class="top">
+                                    <div class="logof">
+                                        <a href="#">
+                                            <img src="assets/imgs/logo_footer.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="iff">
+                                    Với nhiều năm kinh nghiệm trong lĩnh vực tổ chức và phân phối các tour du lịch giá rẻ, chất lượng đi cùng trải nghiệm thú vị nhất, Nguyen Ngoc Travel đã mang đến cho hàng triệu du khách những chuyến “vi vu” đáng giá nhất. Với việc nắm bắt xu hướng du lịch nhanh chóng, Nguyen Ngoc Travel luôn tiên phong mang đến các hành trình hấp dẫn, điểm đến mới mẻ cho cộng đồng những người yêu “xê dịch”.
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-auto pt-4">
+                                <h4 class="titf">Dịch vụ</h4>
+                                <div class="mnf">
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                    <p><a href="#">Giới thiệu </a></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-auto pt-4">
+                                <h4 class="titf">Thông tin</h4>
+                                <div class="mnf">
+                                    <p><a href="#">Giới thiệu</a></p>
+                                    <p><a href="#">Tour trong nước</a></p>
+                                    <p><a href="#">Tour bình thuận</a></p>
+                                    <p><a href="#">Tour quốc tế</a></p>
+                                    <p><a href="#">Đặt phòng</a></p>
+                                    <p><a href="#">Vé máy bay</a></p>
+                                    <p><a href="#">Visa</a></p>
+                                    <p><a href="#">Cẩm nang du lịch</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 pt-4">
+                        <h4 class="titf">Bản đồ</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d979.3417442407141!2d108.11786226954345!3d10.93562699932644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU2JzA4LjMiTiAxMDjCsDA3JzA2LjYiRQ!5e0!3m2!1svi!2s!4v1702364530116!5m2!1svi!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="container border-top py-3 text-center">
+                <div class="coppyf">
+                    <span class="copy">© Bản quyền 2023 thuộc về <a href="#" target="_blank">Công ty TNHH dịch vụ du lịch Nguyên Ngọc</a>. </span>
+                    <span class="design">Thiết kế bởi <a href="https://thanhsangmos.com/" target="_blank">Biển Vàng </a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    
+</body>
+
+</html>
