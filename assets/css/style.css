@@ -365,7 +365,7 @@ and (max-width :576px){
 
 /*abouthome*/
 .abouthome{}
-.rowgt{background-image: url("assets/imgs/background-about.png"); align-items:center;}
+.rowgt{background-image: url("../imgs/background-about.png"); align-items:center;}
 .ndgt {color: #fff;}
 .ndgt h2{color:var(--main);font-size: calc(1.025rem + .9vw);font-family: avob;}
 .ndgt span {text-transform:capitalize;}
